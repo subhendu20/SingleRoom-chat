@@ -1,184 +1,363 @@
-*{
-          margin:0px;
-          padding:0px;
-          box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-html{
-          font-size: 62.5%;
+
+html {
+  font-size: 62.5%;
 }
-.main{
-          width:100%;
-          height:100vh;
-          background-color: black;
-          display:flex;
-          flex-direction: row;
-          overflow-x: hidden;
-          
-}
-.main .document{
-          width:50%;
-          height:100vh;
-          
-          display:flex;
-          justify-content: center;
-          align-items: center;
-          
-}
-.main .document .document-box{
-          width:100%;
-          display:flex;
-          flex-direction: column;
-          
-}
-.main .document .document-box span{
-          width:100%;
-          margin:10px;
-          display:flex;
-          justify-content: center;
-          
-}
-.main .document .document-box span img{
-          height:400px;
-          width:400px;
-}
-.main .document .document-box span input{
-          width:30%;
-          border: none;
-          outline: none;
-          background-color: black;
-          border-bottom: 2px solid white;
-          padding:10px;
-          margin:0px 1rem;
-          border-top-right-radius: 5px;
-          border-top-left-radius: 5px;
-          color:white;
-          
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
 
 }
-.main .document .document-box span input::placeholder{
-          color:grey;
-          font-size: 20px;
-}
-.main .document .document-box span input:hover{
-          background-color: rgb(53, 50, 50);
-}
-.main .document .document-box span button{
-          font-size: 2rem;
-          padding:10px;
-          margin:0px 20px;
-          background-color: rgb(235, 202, 59);
-          color:black;
-          border: none;
-          border-radius: 5px;
+.back{
+  background-image: url('./background2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 
-}
-.main .document .document-box span button:hover{
-          background-color: rgb(207, 172, 16);
-          transform: scale(1.1);
 }
 
 
 
-
-.main .chatbox{
-          width:50%;
-          height:100%;
-          background-image: url('/background.jpg');
-          background-position: center;
-          background-size: cover;
-          background-attachment: fixed;
-          display: flex;
-          flex-direction: column;
-          position: relative;
-          
-
-}
-.main .chatbox .chats{
-          width:100%;
-          height:100%;
-          padding:30px 10px;
-          display:flex;
-          flex-direction: column;
-          overflow-y: auto;
+.main .document {
+  width: 20%;
+  height: 100%;
+  
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  
+ 
 
 
 }
+.main .document div.title{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color:black;
+  align-items: center;
+  font-size: 3rem;
+  position: sticky;
+  height: 10%;
+  top: 0%;
+  left: 0%;
+  color: white;
+  font-family: sans-serif;
+
+}
+
+.main .document .peoples {
+  width: 100%;
+  height:80%;
+  background-color:black;
+  overflow-y: scroll;
+  display: flex;
+  
+  flex-direction: column;
+  position: relative;
+  
+
+}
+.main .document .peoples span{
+  width:100%;
+  padding:10px;
+  
+  font-size: 2rem;
+  border-radius: 10px;
+  background-color: rgb(29, 28, 28);
+  color:white;
+  font-weight: 500;
+  font-family: sans-serif;
+  margin: 5px 0px;
+}
+
+ 
+
+.main .document .peoples::-webkit-scrollbar{
+  display: none;
+}
+.main .btn{
+  width:100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.main .btn button{
+  font-size: 2rem;
+  padding: 10px;
+  margin: 0px 20px;
+  background-color: rgb(241, 57, 10);
+  color: black;
+  border: none;
+  border-radius: 5px;
+
+}
+.main .document .btn button:hover{
+  background-color: rgb(202, 59, 3);
+  transform: scale(1.1);
+
+}
+.main .document-box {
+  width: 20%;
+  height: 10%;
+  background:none;
+  flex-direction: column;
+  justify-content: center;
+  
+
+}
+
+.main .document-box span {
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.main .document-box span img {
+  height: 400px;
+  width: 400px;
+}
+
+.main .document-box span input {
+  width: 80%;
+  border: none;
+  outline: none;
+  background-color: black;
+  border-bottom: 2px solid white;
+  padding: 10px;
+  margin: 0px 1rem;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  color: white;
+
+
+}
+
+.main .document-box span input::placeholder {
+  color: grey;
+  font-size: 2rem;
+}
+
+.main .document-box span input:hover {
+  background-color: rgb(53, 50, 50);
+}
+
+.main .document-box span button {
+  font-size: 2rem;
+  padding: 10px;
+  margin: 0px 20px;
+  background-color: rgb(235, 202, 59);
+  color: black;
+  border: none;
+  border-radius: 5px;
+
+}
+
+.main .document-box span button:hover {
+  background-color: rgb(207, 172, 16);
+  transform: scale(1.1);
+}
+
+
+
+
+.main .chatbox {
+  width: 80%;
+  height: 100%;
+  background-image: url('/background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  flex-direction: column;
+  position: relative;
+
+
+}
+.chatbox .floatbtn{
+  position: absolute;
+  top:1%;
+  right:1%;
+  display: none;
+  
+  
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 4;
+}
+.chatbox .floatbtn button{
+  color:black;
+  background-color: rgb(40, 204, 149);
+  padding:5px;
+  font-size: 10px;
+  border: none;
+
+}
+
+
+
+
+
+
+
+.hide{
+  display: none;
+}
+.flex{
+  display:flex;
+}
+
+
+
+
+
+
+
+
+
+.main .chatbox .chats {
+  width: 100%;
+  height: 100%;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+
+
+}
+
 .main .chatbox .chats::-webkit-scrollbar {
   display: none;
 }
-.main .chatbox .chats div{
-          width: 100%;
-          display:flex;
-          
+
+.main .chatbox .chats div {
+  width: 100%;
+  display: flex;
+
 }
-.main .chatbox .chats div.left{
-          justify-content: start;
+
+.main .chatbox .chats div.left {
+  justify-content: start;
 }
-.main .chatbox .chats div.center{
-          justify-content: center;
+
+.main .chatbox .chats div.center {
+  justify-content: center;
 }
-.main .chatbox .chats div.right{
-          justify-content: end;
+
+.main .chatbox .chats div.right {
+  justify-content: end;
 }
-.main .chatbox .chats .message{
-          background-color: white;
-          border-radius: 5px;
-          max-width: 40%;
-          padding:5px;
-          font-size: 2rem;
-          margin:20px 0px;
-          
+
+.main .chatbox .chats .message {
+  background-color: white;
+  border-radius: 5px;
+  max-width: 40%;
+  padding: 5px;
+  font-size: 2rem;
+  margin: 20px 0px;
+
 }
-.main .chatbox .chats .message2{
-          background-color: black;
-          color: grey;
-          border-radius: 10px;
-          
-          max-width: 30%;
-          padding:5px;
-          font-size: 1.5rem;
-          margin:20px 0px;
-          text-align: center;
-          
+
+.main .chatbox .chats .message2 {
+  background-color: black;
+  color: grey;
+  border-radius: 10px;
+
+  max-width: 30%;
+  padding: 5px;
+  font-size: 1.5rem;
+  margin: 20px 0px;
+  text-align: center;
+
 }
-.main .chatbox .chat-form{
-          width:100%;
-          
-          position: absolute;
-          bottom: 0%;
-          left: 0%;
-          background: none;
+
+.main .chatbox .chat-form {
+  width: 100%;
+
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  background: none;
+  z-index: 3;
 }
-.main .chatbox .chat-form form{
-          width:100%;
-          display: flex;
-          justify-content: space-between;
-          padding:5%;
-          align-items: center;
+
+.main .chatbox .chat-form form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+  align-items: center;
 
 
 }
-.main .chatbox .chat-form form button{
-          border-radius: 50%;
-          border: none;
-}
-.main .chatbox .chat-form form input{
-          width: 70%;
-          border-radius: 10px;
-          border: none;
-          outline: none;
-          padding: 10px;
-          box-shadow: 4px 4px 10px 0px black;
-}
-.main .chatbox .chat-form form input::placeholder{
-          font-size: 15px;
-}
-.main .chatbox .chat-form form i{
-          font-size: 20px;
-          padding:10px;
-          border-radius: 50%;
-          background-color: white;
-          color:rgb(23, 104, 23);
+
+.main .chatbox .chat-form form button {
+  border-radius: 50%;
+  border: none;
 }
 
+.main .chatbox .chat-form form input {
+  width: 70%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  box-shadow: 4px 4px 10px 0px black;
+}
+
+.main .chatbox .chat-form form input::placeholder {
+  font-size: 1.5rem;
+}
+
+.main .chatbox .chat-form form i {
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
+  color: rgb(23, 104, 23);
+}
+
+
+@media (max-width:780px) {
+  html{
+    font-size: 50%;
+  }
+
+
+  
+}
+@media (max-width:580px) {
+  html{
+    font-size: 40%;
+  }
+  .main .document{
+    display: none;
+  }
+  .main .chatbox{
+    width: 100%;
+  }
+  .chatbox .floatbtn{
+    display: block;
+  }
+  .main .document-box {
+    width: 50%;
+  }
+  
+
+}
 

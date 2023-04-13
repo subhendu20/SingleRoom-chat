@@ -8,14 +8,17 @@
           <link rel="stylesheet" href="/indes.css">
           <title>ChitChat</title>
           <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-          
+          <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+          <!-- Image by <a href="https://pixabay.com/users/anrita1705-11109462/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4931923">Anrita</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4931923">Pixabay</a> -->
    
 </head>
 
 <body>
-          <div class="main">
+          <div class="main back" id="main">
+                    
 
-                    <div class="chatbox">
+                    <div class="chatbox  hide" id="chatparentbox">
+                              <div class="floatbtn" onclick="leave()"><button>Leave</button></span></div>
                               <div class="chats" id="chatbox">
                                         
 
@@ -29,20 +32,32 @@
                               </div>
 
                     </div>
-                    <div class="document">
-                              <div class="document-box">
-                                        <span><img src="/img2.png" alt="logo"></span>
-
-                                        <span><input id="join" class="user-input" type="text" name="user"
-                                                            placeholder="Enter your Name"></span>
-                                        <span><button id="joinbtn">Join</button><button>Leave</button></span>
-
+                    <div class="document hide" id="document">
+                              <div class="title">Members</div>
+                              <div class="peoples" id="peoples">
+                                        
+                                        
+                                      
 
                               </div>
+                              <div class="btn" onclick="leave()"><button>Leave</button></span></div>
+                              
+                              
+                             
+
+                              
 
 
                     </div>
-          </div>
+                    <div class="document-box flex" id="documentbox">
+                                       
+
+                              <span><input id="join" class="user-input" type="text" name="user"
+                                                  placeholder="Enter your Name"></span>
+                              <span><button id="joinbtn">Join</button>
+
+                    </div>
+          </div> 
          
           
           <script src="http://localhost:7001/socket.io/socket.io.js"></script>
