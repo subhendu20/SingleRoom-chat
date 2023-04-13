@@ -1,0 +1,184 @@
+*{
+          margin:0px;
+          padding:0px;
+          box-sizing: border-box;
+}
+html{
+          font-size: 62.5%;
+}
+.main{
+          width:100%;
+          height:100vh;
+          background-color: black;
+          display:flex;
+          flex-direction: row;
+          overflow-x: hidden;
+          
+}
+.main .document{
+          width:50%;
+          height:100vh;
+          
+          display:flex;
+          justify-content: center;
+          align-items: center;
+          
+}
+.main .document .document-box{
+          width:100%;
+          display:flex;
+          flex-direction: column;
+          
+}
+.main .document .document-box span{
+          width:100%;
+          margin:10px;
+          display:flex;
+          justify-content: center;
+          
+}
+.main .document .document-box span img{
+          height:400px;
+          width:400px;
+}
+.main .document .document-box span input{
+          width:30%;
+          border: none;
+          outline: none;
+          background-color: black;
+          border-bottom: 2px solid white;
+          padding:10px;
+          margin:0px 1rem;
+          border-top-right-radius: 5px;
+          border-top-left-radius: 5px;
+          color:white;
+          
+
+}
+.main .document .document-box span input::placeholder{
+          color:grey;
+          font-size: 20px;
+}
+.main .document .document-box span input:hover{
+          background-color: rgb(53, 50, 50);
+}
+.main .document .document-box span button{
+          font-size: 2rem;
+          padding:10px;
+          margin:0px 20px;
+          background-color: rgb(235, 202, 59);
+          color:black;
+          border: none;
+          border-radius: 5px;
+
+}
+.main .document .document-box span button:hover{
+          background-color: rgb(207, 172, 16);
+          transform: scale(1.1);
+}
+
+
+
+
+.main .chatbox{
+          width:50%;
+          height:100%;
+          background-image: url('/background.jpg');
+          background-position: center;
+          background-size: cover;
+          background-attachment: fixed;
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          
+
+}
+.main .chatbox .chats{
+          width:100%;
+          height:100%;
+          padding:30px 10px;
+          display:flex;
+          flex-direction: column;
+          overflow-y: auto;
+
+
+}
+.main .chatbox .chats::-webkit-scrollbar {
+  display: none;
+}
+.main .chatbox .chats div{
+          width: 100%;
+          display:flex;
+          
+}
+.main .chatbox .chats div.left{
+          justify-content: start;
+}
+.main .chatbox .chats div.center{
+          justify-content: center;
+}
+.main .chatbox .chats div.right{
+          justify-content: end;
+}
+.main .chatbox .chats .message{
+          background-color: white;
+          border-radius: 5px;
+          max-width: 40%;
+          padding:5px;
+          font-size: 2rem;
+          margin:20px 0px;
+          
+}
+.main .chatbox .chats .message2{
+          background-color: black;
+          color: grey;
+          border-radius: 10px;
+          
+          max-width: 30%;
+          padding:5px;
+          font-size: 1.5rem;
+          margin:20px 0px;
+          text-align: center;
+          
+}
+.main .chatbox .chat-form{
+          width:100%;
+          
+          position: absolute;
+          bottom: 0%;
+          left: 0%;
+          background: none;
+}
+.main .chatbox .chat-form form{
+          width:100%;
+          display: flex;
+          justify-content: space-between;
+          padding:5%;
+          align-items: center;
+
+
+}
+.main .chatbox .chat-form form button{
+          border-radius: 50%;
+          border: none;
+}
+.main .chatbox .chat-form form input{
+          width: 70%;
+          border-radius: 10px;
+          border: none;
+          outline: none;
+          padding: 10px;
+          box-shadow: 4px 4px 10px 0px black;
+}
+.main .chatbox .chat-form form input::placeholder{
+          font-size: 15px;
+}
+.main .chatbox .chat-form form i{
+          font-size: 20px;
+          padding:10px;
+          border-radius: 50%;
+          background-color: white;
+          color:rgb(23, 104, 23);
+}
+
+

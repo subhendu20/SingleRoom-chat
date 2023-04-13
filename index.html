@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="/indes.css">
+          <title>ChitChat</title>
+          <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+</head>
+
+<body>
+          <div class="main">
+
+                    <div class="chatbox">
+                              <div class="chats" id="chatbox">
+                                        
+
+
+
+                              </div>
+                              <div class="chat-form">
+                                        <form id="formid" onsubmit="submitmsg();return false"><input type="text" id="messageid" name="message"
+                                                            placeholder="Enter Message"><button type="submit"><i
+                                                                      class='bx bx-send'></i></button></form>
+                              </div>
+
+                    </div>
+                    <div class="document">
+                              <div class="document-box">
+                                        <span><img src="/img2.png" alt="logo"></span>
+
+                                        <span><input id="join" class="user-input" type="text" name="user"
+                                                            placeholder="Enter your Name"></span>
+                                        <span><button id="joinbtn">Join</button><button>Leave</button></span>
+
+
+                              </div>
+
+
+                    </div>
+          </div>
+         
+          
+          <script src="http://localhost:7001/socket.io/socket.io.js"></script>
+          <script src="./js/app.js" type="text/javascript"> </script>
+</body>
+
+</html>
