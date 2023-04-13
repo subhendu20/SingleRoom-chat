@@ -43,7 +43,7 @@ io.on("connection", (socket) => {
     })
     users.splice(find,1)
     console.log(users)
-    socket.broadcast.emit('left',data)
+    socket.broadcast.emit('left',{name:data,user:users})
     
 
 

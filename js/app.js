@@ -98,7 +98,10 @@ socket.on('receive',(data)=>{
 })
 
 socket.on('left',(data)=>{
-         appendnew(`${data} left the chat`,'center')
+          data.user.map((e)=>{
+                    return appendpeople(e.name) 
+          })
+         appendnew(`${data.name} left the chat`,'center')
 })
 
  
