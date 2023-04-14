@@ -1,4 +1,5 @@
-const root = `https://singleroom-chat-production.up.railway.app:7001` || 'http://localhost:7001'
+const dotenv = require('dotenv').config()
+const root = `${process.env.LINK}:${process.env.PORT}`
 const socket  = io(root)
 
 
