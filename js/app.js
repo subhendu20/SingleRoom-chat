@@ -1,4 +1,4 @@
-const root = 'http://localhost:7001'
+const root = `https://singleroom-chat-production.up:7001` || 'http://localhost:7001'
 const socket  = io(root)
 
 
