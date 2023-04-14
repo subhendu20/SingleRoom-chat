@@ -49,6 +49,12 @@ io.on("connection", (socket) => {
 
   })
   socket.on('disconnect', () => {
+    const find = users.findIndex(e=>{
+      return e.name==names[socket.id]
+    })
+    users.splice(find,1)
+    console.log(users)
+    socket.broadcast.emit('left',{name:data,user:users})
     console.log(`${socket.id} left the chat`)
 
   
