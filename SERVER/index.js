@@ -54,7 +54,7 @@ io.on("connection", (socket) => {
     })
     users.splice(find,1)
     console.log(users)
-    socket.broadcast.emit('left',{name:data,user:users})
+    socket.broadcast.emit('left',{name:names[socket.id],user:users})
     console.log(`${socket.id} left the chat`)
 
   
