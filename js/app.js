@@ -1,5 +1,5 @@
-const dotenv = require('dotenv').config()
-const root = `${process.env.LINK}:${process.env.PORT}`
+
+const root = `http://localhost:7001`
 const socket  = io(root)
 
 
