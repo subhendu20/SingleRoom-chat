@@ -1,5 +1,5 @@
-
-const socket  = io('http://localhost:7001')
+const root = 'http://localhost:7001'
+const socket  = io(root)
 
 
 

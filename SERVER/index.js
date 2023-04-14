@@ -2,7 +2,7 @@ const cors = require('cors')
 cors()
 const io = require('socket.io')(7001, {
   cors: {
-    origin: "http://127.0.0.1:5500",
+    origin: "*",
     methods: ["GET", "POST"],
     transports: ['websocket', 'polling'],
     credentials: true
